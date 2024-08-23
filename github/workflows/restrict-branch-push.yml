@@ -14,13 +14,13 @@ jobs:
       - name: Validate User
         run: |
           BRANCH=${GITHUB_REF#refs/heads/}
-          if [ "$BRANCH" = "seenu" ] && [ "$GITHUB_ACTOR" != "seenu" ]; then
+          if [ "$BRANCH" = "seenu" ] && [ "$GITHUB_ACTOR" != "seenuvasan1947" ]; then
             echo "You are not allowed to push to the seenu branch."
             exit 1
-          elif [ "$BRANCH" = "ramya" ] && [ "$GITHUB_ACTOR" != "ramya" ]; then
+          elif [ "$BRANCH" = "ramya" ] && [ "$GITHUB_ACTOR" != "errormak" ]; then
             echo "You are not allowed to push to the ramya branch."
             exit 1
-          elif [ "$BRANCH" = "purush" ] && [ "$GITHUB_ACTOR" != "purush" ]; then
+          elif [ "$BRANCH" = "purush" ] && [ "$GITHUB_ACTOR" != "purushothamanlabi" ]; then
             echo "You are not allowed to push to the purush branch."
             exit 1
           fi
