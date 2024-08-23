@@ -147,7 +147,7 @@ section .signin .content .form .inputBox i
 }
 .signin .content .form .links a:nth-child(2)
 {
-  color: #0f0;
+  color: deeppink;
   font-weight: 600;
 }
 .signin .content .form .inputBox input[type="submit"]
