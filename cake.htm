@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Recipes</title>
+    <link rel="stylesheet" href="./cake.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-birthday-cake cake-icon"></i>
+            Sweet Delights
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart" id="cart-icon"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+    <main id="home">
+        <div id="food-container"></div>
+    </main>
+
+    <div class="cake-gallery">
+       
+        <div class="card-container" id="cakeContainer">
+            <div class="card-container">
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/1.jpg" alt="Raspberry and custard muffins" ">
+                  <div class="description">Raspberry and custard muffins</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/2.jpg" alt="Lemon and blackberry stripe cake">
+                  <div class="description">Lemon and blackberry stripe cake</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/3.jpg" alt="Paul Hollywood’s chocolate fudge cake">
+                  <div class="description">Paul Hollywood’s chocolate fudge cake</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/4.jpg" alt="Lemon and strawberry meringue cake">
+                  <div class="description">Lemon and strawberry meringue cake</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/5.jpg" alt="Vegan chocolate cake">
+                  <div class="description">Vegan chocolate cake</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/6.jpg" alt="Spiced plum cake with swiss meringue frosting">
+                  <div class="description">Spiced plum cake with swiss meringue frosting</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/7.jpg" alt="Lemon and courgette cake with white chocolate cream cheese frosting">
+                  <div class="description">Lemon and courgette cake with white chocolate cream cheese frosting</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/8.jpg" alt="Chocolate cake with caramel poached pears and chocolate buttercream">
+                  <div class="description">Chocolate cake with caramel poached pears and chocolate buttercream</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/9.jpg" alt="Rhubarb and custard layer cake">
+                  <div class="description">Rhubarb and custard layer cake</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/10.jpg" alt="Spring lamb cupcakes">
+                  <div class="description">Spring lamb cupcakes</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/11.jpg" alt="Peanut butter drip cake">
+                  <div class="description">Peanut butter drip cake</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/12.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Ginger drizzle traybake with cream cheese icing</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/13.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Baked lemon cheesecake with pineapple flowers</div>
+                </div>
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/14.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Carrot and cheesecake layer cake</div>
+                </div>      <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/15.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Sugarplum fairy cakes</div>
+                </div>      <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/16.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Summer-cup bundt drizzle cake</div>
+                </div>      <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/17.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">St Clement’s squares</div>
+                </div>      <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/18.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Caramelised white chocolate, burnt butter and tahini cake</div>
+                </div>  
+                <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/19.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Eric Lanlard’s carrot and pumpkin celebration cake</div>
+                </div>     <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/20.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Tunnock’s teacake traybake</div>
+                </div>     <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/21.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Easy butterfly cakes</div>
+                </div>     <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/22.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Chocolate cupcakes</div>
+                </div>     <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/23.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Orange blossom, lemon thyme and almond cake</div>
+                </div>     <div class="card">
+                  <img src="https://apipics.s3.amazonaws.com/cakes_api/24.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+                  <div class="description">Eton mess traybake</div>
+                </div>     
+                </div>  
+           
+        </div>
+        <div id="recipeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="recipeName"></h2>
+                <img id="recipeImage" src="" alt="">
+                <h3><strong>Ingredients:</strong></h3>
+                <ul id="ingredientsList"></ul>
+                <h3><strong>Method:</strong></h3>
+                <ol id="methodList"></ol>
+                <a href="https://www.youtube.com/watch?v=abcd1234" target="_blank" class="yt">Watch on YouTube</a>
+
+
+            </div>
+        </div>
+    
+    </div>
+    <!-- <div class="card-container" id="cakeContainer">
+        <div class="card-container">
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/1.jpg" alt="Raspberry and custard muffins">
+              <div class="description">Raspberry and custard muffins</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/2.jpg" alt="Lemon and blackberry stripe cake">
+              <div class="description">Lemon and blackberry stripe cake</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/3.jpg" alt="Paul Hollywood’s chocolate fudge cake">
+              <div class="description">Paul Hollywood’s chocolate fudge cake</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/4.jpg" alt="Lemon and strawberry meringue cake">
+              <div class="description">Lemon and strawberry meringue cake</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/5.jpg" alt="Vegan chocolate cake">
+              <div class="description">Vegan chocolate cake</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/6.jpg" alt="Spiced plum cake with swiss meringue frosting">
+              <div class="description">Spiced plum cake with swiss meringue frosting</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/7.jpg" alt="Lemon and courgette cake with white chocolate cream cheese frosting">
+              <div class="description">Lemon and courgette cake with white chocolate cream cheese frosting</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/8.jpg" alt="Chocolate cake with caramel poached pears and chocolate buttercream">
+              <div class="description">Chocolate cake with caramel poached pears and chocolate buttercream</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/9.jpg" alt="Rhubarb and custard layer cake">
+              <div class="description">Rhubarb and custard layer cake</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/10.jpg" alt="Spring lamb cupcakes">
+              <div class="description">Spring lamb cupcakes</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/11.jpg" alt="Peanut butter drip cake">
+              <div class="description">Peanut butter drip cake</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/12.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Ginger drizzle traybake with cream cheese icing</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/13.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Baked lemon cheesecake with pineapple flowers</div>
+            </div>
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/14.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Carrot and cheesecake layer cake</div>
+            </div>      <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/15.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Sugarplum fairy cakes</div>
+            </div>      <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/16.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Summer-cup bundt drizzle cake</div>
+            </div>      <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/17.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">St Clement’s squares</div>
+            </div>      <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/18.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Caramelised white chocolate, burnt butter and tahini cake</div>
+            </div>  
+            <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/19.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Eric Lanlard’s carrot and pumpkin celebration cake</div>
+            </div>     <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/20.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Tunnock’s teacake traybake</div>
+            </div>     <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/21.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Easy butterfly cakes</div>
+            </div>     <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/22.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Chocolate cupcakes</div>
+            </div>     <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/23.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Orange blossom, lemon thyme and almond cake</div>
+            </div>     <div class="card">
+              <img src="https://apipics.s3.amazonaws.com/cakes_api/24.jpg" alt="Ginger drizzle traybake with cream cheese icing">
+              <div class="description">Eton mess traybake</div>
+            </div>     
+            </div>  
+       
+    </div> -->
+
+ 
+    <script src="cake.js"></script>
+</body>
+</html>
