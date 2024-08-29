@@ -1,0 +1,146 @@
+.profile-container {
+  max-width: 935px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stat {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.stat:hover {
+  transform: translateY(-2px);
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.stat-label {
+  color: #8e8e8e;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.profile-info {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  color: #262626;
+}
+
+.full-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+.external-link {
+  color: #00376b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.external-link:hover {
+  color: #1c5380;
+}
+
+.private-account {
+  font-size: 14px;
+  color: #8e8e8e;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-picture {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-stats {
+    justify-content: center;
+  }
+
+  .stat {
+    margin: 10px;
+  }
+
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+}
