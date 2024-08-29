@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollywood Bonanza</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #FF4081;
+            --secondary-color: #FFC107;
+            --accent-color: #00BCD4;
+            --text-color: #333;
+            --background-color: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #search-input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px 0 0 20px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        #search-button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #search-button:hover {
+            background-color: var(--primary-color);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+            text-shadow: 0 0 5px rgba(255,255,255,0.5);
+        }
+
+        .banner-slider {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .banner-slide {
+            position: relative;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .banner-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+        }
+
+        .banner-content h2 {
+            margin: 0;
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .banner-content p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+
+        .banner {
+            background-color: white;
+            padding: 30px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin: 0 0 20px 0;
+            font-size: 36px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .sort-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sort-option {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            color: white;
+        }
+
+        .sort-option:hover, .sort-option.active {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        #category-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .category-item {
+            background-color: var(--accent-color);
+            border: none;
+            padding: 5px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .category-item:hover, .category-item.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        #cities-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        #no-results {
+            text-align: center;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-top: 40px;
+            display: none;
+        }
+
+        #load-more {
+            text-align: center;
+            padding: 20px 0;
+            display: none;
+        }
+
+        #load-more button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        #load-more button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        #add-movie-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-left: 20px;
+        }
+
+        #add-movie-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        #add-movie-form {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        #add-movie-form input {
+            margin-right: 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        #add-movie-form button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">Bollywood Bonanza</a>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search movies...">
+                <button id="search-button">Search</button>
+            </div>
+            <button id="add-movie-btn">Add Movie</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Top Rated</a></li>
+                    <li><a href="#">New Releases</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="add-movie-form">
+        <input type="text" id="movie-title" placeholder="Movie Title" required>
+        <input type="number" id="movie-year" placeholder="Year" required>
+        <input type="text" id="movie-genres" placeholder="Genres (comma-separated)" required>
+        <input type="text" id="movie-actors" placeholder="Actors (comma-separated)" required>
+        <input type="text" id="movie-storyline" placeholder="Storyline" required>
+        <input type="url" id="movie-posterurl" placeholder="Poster URL" required>
+        <button id="submit-movie">Add</button>
+    </div>
+
+    <div class="banner-slider">
+        <!-- Slider content will be dynamically added here -->
+    </div>
+
+    <div class="banner">
+        <h1>Discover Indian Cinema</h1>
+        <div class="sort-options">
+            <div class="sort-option active" data-sort="default">All</div>
+            <div class="sort-option" data-sort="genre">Genre</div>
+            <div class="sort-option" data-sort="hero">Lead Actor</div>
+            <div class="sort-option" data-sort="year">Release Year</div>
+        </div>
+        <div id="category-list"></div>
+    </div>
+
+    <div id="cities-container"></div>
+    <div id="load-more">
+        <button id="load-more-btn">Load More</button>
+    </div>
+    <div id="no-results">No movies found matching your search.</div>
+
+    <script>
+    let citiesData = [];
+    let currentData = [];
+    let currentSort = "default";
+    let currentPage = 1;
+    const moviesPerPage = 15;
+
+    $.get("http://localhost:3001/movies", function(data, status){
+        citiesData = data;
+        currentData = [...citiesData];
+        renderCards(currentData, true);
+        setupBannerSlider();
+    });
+
+    function isImageValid(url) {
+        return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => resolve(true);
+            img.onerror = () => resolve(false);
+            img.src = url;
+        });
+    }
+
+    async function setupBannerSlider() {
+        const shuffled = [...citiesData].sort(() => 0.5 - Math.random());
+        const bannerMovies = [];
+
+        for (const movie of shuffled) {
+            if (bannerMovies.length >= 5) break;
+            
+            const isValid = await isImageValid(movie.posterurl);
+            if (isValid) {
+                bannerMovies.push(movie);
+            }
+        }
+
+        bannerMovies.forEach(movie => {
+            $('.banner-slider').append(`
+                <div class="banner-slide">
+                    <img src="${movie.posterurl}" alt="${movie.title}">
+                    <div class="banner-content">
+                        <h2>${movie.title}</h2>
+                        <p>${movie.year} | ${movie.genres.join(', ')}</p>
+                    </div>
+                </div>
+            `);
+        });
+
+        $('.banner-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: false
+        });
+    }
+
+    function renderCards(data, reset = false) {
+        if (reset) {
+            $("#cities-container").empty();
+            currentPage = 1;
+        }
+
+        $("#no-results").hide();
+
+        if (data.length === 0) {
+            $("#no-results").show();
+            $("#load-more").hide();
+            return;
+        }
+
+        const start = (currentPage - 1) * moviesPerPage;
+        const end = start + moviesPerPage;
+        const moviesToRender = data.slice(start, end);
+
+        moviesToRender.forEach(element => {
+            const card = $(`
+                <div class="card" data-movie="${encodeURIComponent(JSON.stringify(element))}">
+                    <img src="${element["posterurl"]}" alt="${element["title"]}">
+                    <div class="card-content">
+                        <h3>${element["title"]}</h3>
+                        <p><strong>Year:</strong> ${element["year"]}</p>
+                        <p><strong>Genre:</strong> ${element["genres"].join(", ")}</p>
+                        <p><strong>Lead Actor:</strong> ${element["actors"][0]}</p>
+                        <p><strong>Storyline:</strong> ${element["storyline"].substring(0, 100)}...</p>
+                    </div>
+                </div>
+            `);
+            
+            card.find('img').on('error', function() {
+                card.remove();
+            });
+
+            card.on('click', function() {
+                const movieData = JSON.parse(decodeURIComponent($(this).attr('data-movie')));
+                window.location.href = `details.html?movie=${encodeURIComponent(movieData.title)}`;
+            });
+
+            $("#cities-container").append(card);
+        });
+
+        if (end < data.length) {
+            $("#load-more").show();
+        } else {
+            $("#load-more").hide();
+        }
+    }
+
+    function loadMoreMovies() {
+        currentPage++;
+        renderCards(currentData);
+    }
+
+    function searchMovies(query) {
+        currentData = citiesData.filter(movie => 
+            movie.title.toLowerCase().includes(query.toLowerCase())
+        );
+        renderCards(currentData, true);
+    }
+
+    function getUniqueCategories(sortBy) {
+        let categories = new Set();
+        citiesData.forEach(movie => {
+            if (sortBy === "genre") {
+                movie.genres.forEach(genre => categories.add(genre));
+            } else if (sortBy === "hero") {
+                categories.add(movie.actors[0]);
+            } else if (sortBy === "year") {
+                categories.add(movie.year);
+            }
+        });
+        let sortedCategories = Array.from(categories);
+        if (sortBy === "year") {
+            sortedCategories.sort((a, b) => b - a); // Sort years in descending order
+        } else {
+            sortedCategories.sort();
+        }
+        return sortedCategories;
+    }
+
+    function renderCategories(sortBy) {
+        const categories = getUniqueCategories(sortBy);
+        $("#category-list").empty();
+        categories.forEach(category => {
+            $("#category-list").append(`<div class="category-item" data-category="${category}">${category}</div>`);
+        });
+    }
+
+    function filterMovies(category) {
+        currentData = citiesData.filter(movie => {
+            if (currentSort === "genre") {
+                return movie.genres.includes(category);
+            } else if (currentSort === "hero") {
+                return movie.actors[0] === category;
+            } else if (currentSort === "year") {
+                return movie.year.toString() === category.toString();
+            }
+            return true;
+        });
+        renderCards(currentData, true);
+    }
+
+    $(".sort-option").on("click", function() {
+        $(".sort-option").removeClass("active");
+        $(this).addClass("active");
+        currentSort = $(this).data("sort");
+        
+        if (currentSort === "default") {
+            $("#category-list").empty();
+            currentData = [...citiesData];
+            renderCards(currentData, true);
+        } else {
+            renderCategories(currentSort);
+        }
+    });
+
+    $(document).on("click", ".category-item", function() {
+        $(".category-item").removeClass("active");
+        $(this).addClass("active");
+        const selectedCategory = $(this).data("category");
+        filterMovies(selectedCategory);
+    });
+
+    $("#search-button").on("click", function() {
+        const searchQuery = $("#search-input").val().trim();
+        searchMovies(searchQuery);
+    });
+
+    $("#search-input").on("keyup", function(event) {
+        if (event.key === "Enter") {
+            const searchQuery = $(this).val().trim();
+            searchMovies(searchQuery);
+        }
+    });
+
+    $("#load-more-btn").on("click", loadMoreMovies);
+
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+            loadMoreMovies();
+        }
+    });
+
+    $("#add-movie-btn").on("click", function() {
+        $("#add-movie-form").toggle();
+    });
+
+    $("#submit-movie").on("click", function() {
+        const newMovie = {
+            title: $("#movie-title").val(),
+            year: parseInt($("#movie-year").val()),
+            genres: $("#movie-genres").val().split(",").map(genre => genre.trim()),
+            actors: $("#movie-actors").val().split(",").map(actor => actor.trim()),
+            storyline: $("#movie-storyline").val(),
+            posterurl: $("#movie-posterurl").val()
+        };
+
+        $.post("http://localhost:3001/movies", newMovie, function(response) {
+            console.log("Movie added successfully:", response);
+            $("#add-movie-form").hide();
+            $("#add-movie-form input").val("");
+            
+            // Refresh the movie list
+            $.get("http://localhost:3001/movies", function(data, status){
+                citiesData = data;
+                currentData = [...citiesData];
+                renderCards(currentData, true);
+                setupBannerSlider();
+            });
+        }).fail(function(xhr, status, error) {
+            console.error("Error adding movie:", error);
+        });
+    });
+    </script>
+</body>
+</html>
+
+

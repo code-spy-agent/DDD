@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #F5F5F5;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FF4081;
+            text-align: center;
+        }
+        .movie-poster {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+        }
+        .detail-item {
+            margin-bottom: 10px;
+        }
+        .detail-label {
+            font-weight: bold;
+            color: #00BCD4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Details</h1>
+        <div id="movieDetails"></div>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const movieTitle = urlParams.get('movie').replace(/%20/, ' ');
+
+        if (movieTitle) {
+            fetchMovieDetails(movieTitle);
+            console.log("details.html");
+            console.log(movieTitle);
+        } else {
+            $('#movieDetails').text('No movie specified.');
+        }
+    });
+
+    function fetchMovieDetails(movieTitle) {
+        $.get("http://localhost:3000/data", function(data) {
+            const movieData = data.find(item => item.title === movieTitle);
+            if (movieData) {
+                console.log("details.html");
+                console.log(movieData);
+                $("#movieDetails").append(` 
+                <img src="${movieData.posterurl}" alt="${movieData.title}" class="movie-poster">
+                <div class="detail-item"><span class="detail-label">Title:</span> ${movieData.title}</div>
+                <div class="detail-item"><span class="detail-label">Genres:</span> ${movieData.genres.join(", ")}</div>
+                <div class="detail-item"><span class="detail-label">Actors:</span> ${movieData.actors.join(", ")}</div>
+                 <div class="detail-item"><span class="detail-label">ReleaseDate:</span> ${movieData.releaseDate}</div>   
+                 <div class="detail-item"><span class="detail-label">IMDB Rating:</span> ${movieData.imdbRating}</div>
+                 <div class="detail-item"><span class="detail-label">Storyline:</span> ${movieData.storyline}</div>
+                 `);
+            
+            } else {
+                $('#movieDetails').text('Movie details not found.');
+            }
+        }).fail(function() {
+            $('#movieDetails').text('Error fetching movie data.');
+        });
+    }
+    </script>
+</body>
+</html>
