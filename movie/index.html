@@ -318,6 +318,46 @@
             border-radius: 3px;
             cursor: pointer;
         }
+
+        #update-movie-form {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        #update-movie-form input {
+            margin-right: 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        #update-movie-form button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #show-update-form-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-left: 20px;
+        }
+
+        #show-update-form-btn:hover {
+            background-color: var(--primary-color);
+        }
     </style>
 </head>
 <body>
@@ -350,6 +390,18 @@
         <button id="submit-movie">Add</button>
     </div>
 
+    <button id="show-update-form-btn">Update Movie</button>
+    <div id="update-movie-form" style="display: none;">
+        <input type="number" id="update-movie-id" placeholder="Movie ID" required>
+        <input type="text" id="update-movie-title" placeholder="Movie Title">
+        <input type="number" id="update-movie-year" placeholder="Year">
+        <input type="text" id="update-movie-genres" placeholder="Genres (comma-separated)">
+        <input type="text" id="update-movie-actors" placeholder="Actors (comma-separated)">
+        <input type="text" id="update-movie-storyline" placeholder="Storyline">
+        <input type="url" id="update-movie-posterurl" placeholder="Poster URL">
+        <button id="update-movie-btn">Update</button>
+    </div>
+
     <div class="banner-slider">
         <!-- Slider content will be dynamically added here -->
     </div>
@@ -378,7 +430,7 @@
     let currentPage = 1;
     const moviesPerPage = 15;
 
-    $.get("http://localhost:3001/movies", function(data, status){
+    $.get("http://localhost:3000/data", function(data, status){
         citiesData = data;
         currentData = [...citiesData];
         renderCards(currentData, true);
@@ -580,29 +632,88 @@
     $("#submit-movie").on("click", function() {
         const newMovie = {
             title: $("#movie-title").val(),
-            year: parseInt($("#movie-year").val()),
+            year: $("#movie-year").val(),
             genres: $("#movie-genres").val().split(",").map(genre => genre.trim()),
-            actors: $("#movie-actors").val().split(",").map(actor => actor.trim()),
+            ratings: [],
+            poster: "",
+            contentRating: "",
+            duration: "",
+            releaseDate: "",
+            averageRating: 0,
+            originalTitle: "",
             storyline: $("#movie-storyline").val(),
+            actors: $("#movie-actors").val().split(",").map(actor => actor.trim()),
+            imdbRating: 0,
             posterurl: $("#movie-posterurl").val()
         };
 
-        $.post("http://localhost:3001/movies", newMovie, function(response) {
+        $.post("http://localhost:3000/submit", newMovie, function(response) {
             console.log("Movie added successfully:", response);
             $("#add-movie-form").hide();
             $("#add-movie-form input").val("");
             
             // Refresh the movie list
-            $.get("http://localhost:3001/movies", function(data, status){
+            $.get("http://localhost:3000/data", function(data, status){
                 citiesData = data;
                 currentData = [...citiesData];
                 renderCards(currentData, true);
                 setupBannerSlider();
             });
-        }).fail(function(xhr, status, error) {
+        })
+        .fail(function(xhr, status, error) {
             console.error("Error adding movie:", error);
+            alert("Error adding movie. Please try again.");
         });
     });
+
+    // Show/hide update form
+    $("#show-update-form-btn").on("click", function() {
+        $("#update-movie-form").toggle();
+    });
+
+    // Handle update movie submission
+    $("#update-movie-btn").on("click", function() {
+        const movieId = $("#update-movie-id").val();
+        const updatedData = {
+            title: $("#update-movie-title").val(),
+            year: $("#update-movie-year").val(),
+            genres: $("#update-movie-genres").val() ? $("#update-movie-genres").val().split(",").map(genre => genre.trim()) : undefined,
+            actors: $("#update-movie-actors").val() ? $("#update-movie-actors").val().split(",").map(actor => actor.trim()) : undefined,
+            storyline: $("#update-movie-storyline").val(),
+            posterurl: $("#update-movie-posterurl").val()
+        };
+
+        // Remove undefined fields
+        Object.keys(updatedData).forEach(key => updatedData[key] === undefined && delete updatedData[key]);
+
+        updateMovie(movieId, updatedData);
+    });
+
+    function updateMovie(id, updatedData) {
+        $.ajax({
+            url: `http://localhost:3000/update/${id}`,
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(updatedData),
+            success: function(response) {
+                console.log("Movie updated successfully:", response);
+                $("#update-movie-form").hide();
+                $("#update-movie-form input").val("");
+                
+                // Refresh the movie list
+                $.get("http://localhost:3000/data", function(data, status){
+                    citiesData = data;
+                    currentData = [...citiesData];
+                    renderCards(currentData, true);
+                    setupBannerSlider();
+                });
+            },
+            error: function(xhr, status, error) {
+                console.error("Error updating movie:", error);
+                alert("Error updating movie. Please try again.");
+            }
+        });
+    }
     </script>
 </body>
 </html>

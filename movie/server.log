@@ -1,0 +1,497 @@
+2024-08-29T09:25:51.810Z: GET /data request received
+2024-08-29T09:25:51.814Z: data.json file read successfully
+2024-08-29T09:25:51.822Z: Data sent to client
+2024-08-29T09:25:59.019Z: POST /submit request received
+2024-08-29T09:25:59.021Z: New movie object created: [object Object]
+2024-08-29T09:25:59.025Z: New movie object created: {"title":"Untitled Movie","year":"2024","genres":["Unknown"],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[],"imdbRating":0,"posterurl":""}
+2024-08-29T09:25:59.028Z: Existing data read from data.json
+2024-08-29T09:25:59.031Z: New movie added to the movies array
+2024-08-29T09:25:59.035Z: Updated data written to data.json
+2024-08-29T09:25:59.037Z: Response sent to client
+2024-08-29T09:25:59.282Z: GET /data request received
+2024-08-29T09:25:59.304Z: data.json file read successfully
+2024-08-29T09:25:59.325Z: Data sent to client
+2024-08-29T09:35:04.248Z: GET /data request received
+2024-08-29T09:35:04.262Z: data.json file read successfully
+2024-08-29T09:35:04.308Z: Data sent to client
+2024-08-29T09:35:04.650Z: GET /data request received
+2024-08-29T09:35:04.653Z: data.json file read successfully
+2024-08-29T09:35:04.661Z: Data sent to client
+2024-08-29T09:35:12.438Z: GET /data request received
+2024-08-29T09:35:12.441Z: data.json file read successfully
+2024-08-29T09:35:12.480Z: Data sent to client
+2024-08-29T09:35:14.318Z: GET /data request received
+2024-08-29T09:35:14.321Z: data.json file read successfully
+2024-08-29T09:35:14.324Z: Data sent to client
+2024-08-29T09:35:16.641Z: GET /data request received
+2024-08-29T09:35:16.644Z: data.json file read successfully
+2024-08-29T09:35:16.648Z: Data sent to client
+2024-08-29T09:35:22.739Z: Server started and listening on port 3000
+2024-08-29T09:35:22.918Z: GET /data request received
+2024-08-29T09:35:22.930Z: data.json file read successfully
+2024-08-29T09:35:22.945Z: Data sent to client
+2024-08-29T09:35:23.191Z: GET /data request received
+2024-08-29T09:35:23.195Z: data.json file read successfully
+2024-08-29T09:35:23.200Z: Data sent to client
+2024-08-29T09:35:48.454Z: POST /submit request received
+2024-08-29T09:36:57.665Z: Server started and listening on port 3000
+2024-08-29T09:36:57.879Z: GET /data request received
+2024-08-29T09:36:57.900Z: data.json file read successfully
+2024-08-29T09:36:57.912Z: Data sent to client
+2024-08-29T09:36:58.268Z: GET /data request received
+2024-08-29T09:36:58.274Z: data.json file read successfully
+2024-08-29T09:36:58.282Z: Data sent to client
+2024-08-29T09:37:03.093Z: POST /submit request received
+2024-08-29T09:37:03.094Z: New movie object created: undefined
+2024-08-29T09:37:03.096Z: New movie object created: {"title":"Untitled Movie","year":"2024","genres":["Unknown"],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[],"imdbRating":0,"posterurl":""}
+2024-08-29T09:37:03.099Z: Existing data read from data.json
+2024-08-29T09:37:03.100Z: New movie added to the movies array
+2024-08-29T09:37:03.108Z: Updated data written to data.json
+2024-08-29T09:37:03.111Z: Response sent to client
+2024-08-29T09:37:03.271Z: GET /data request received
+2024-08-29T09:37:03.275Z: data.json file read successfully
+2024-08-29T09:37:03.285Z: Data sent to client
+2024-08-29T09:37:40.899Z: GET /data request received
+2024-08-29T09:37:40.901Z: data.json file read successfully
+2024-08-29T09:37:40.910Z: Data sent to client
+2024-08-29T09:37:43.171Z: GET /data request received
+2024-08-29T09:37:43.183Z: data.json file read successfully
+2024-08-29T09:37:43.192Z: Data sent to client
+2024-08-29T09:37:43.500Z: GET /data request received
+2024-08-29T09:37:43.511Z: data.json file read successfully
+2024-08-29T09:37:43.519Z: Data sent to client
+2024-08-29T09:39:13.396Z: GET /data request received
+2024-08-29T09:39:13.403Z: data.json file read successfully
+2024-08-29T09:39:13.420Z: Data sent to client
+2024-08-29T09:40:16.577Z: Server started and listening on port 3000
+2024-08-29T09:40:16.779Z: GET /data request received
+2024-08-29T09:40:16.795Z: data.json file read successfully
+2024-08-29T09:40:16.811Z: Data sent to client
+2024-08-29T09:40:54.457Z: POST /submit request received
+2024-08-29T09:40:54.461Z: New movie object created: [object Object]
+2024-08-29T09:40:54.463Z: New movie object created: {"title":"Untitled Movie","year":"2024","genres":["Unknown"],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[],"imdbRating":0,"posterurl":""}
+2024-08-29T09:40:54.472Z: Existing data read from data.json
+2024-08-29T09:40:54.477Z: New movie added to the movies array
+2024-08-29T09:40:54.484Z: Updated data written to data.json
+2024-08-29T09:40:54.493Z: Response sent to client
+2024-08-29T09:42:10.158Z: Server started and listening on port 3000
+2024-08-29T09:42:25.034Z: GET /data request received
+2024-08-29T09:42:25.073Z: data.json file read successfully
+2024-08-29T09:42:25.110Z: Data sent to client
+2024-08-29T09:42:25.663Z: GET /data request received
+2024-08-29T09:42:25.671Z: data.json file read successfully
+2024-08-29T09:42:25.683Z: Data sent to client
+2024-08-29T09:42:40.819Z: POST /submit request received
+2024-08-29T09:42:40.822Z: New movie object created: undefined
+2024-08-29T09:42:40.825Z: New movie object created: {"title":"Untitled Movie","year":"2024","genres":["Unknown"],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[],"imdbRating":0,"posterurl":""}
+2024-08-29T09:42:40.829Z: Existing data read from data.json
+2024-08-29T09:42:40.833Z: New movie added to the movies array
+2024-08-29T09:42:40.847Z: Updated data written to data.json
+2024-08-29T09:42:40.855Z: Response sent to client
+2024-08-29T09:42:49.353Z: GET /data request received
+2024-08-29T09:42:49.366Z: data.json file read successfully
+2024-08-29T09:42:49.374Z: Data sent to client
+2024-08-29T09:42:49.554Z: GET /data request received
+2024-08-29T09:42:49.565Z: data.json file read successfully
+2024-08-29T09:42:49.603Z: Data sent to client
+2024-08-29T09:42:50.207Z: GET /data request received
+2024-08-29T09:42:50.213Z: data.json file read successfully
+2024-08-29T09:42:50.229Z: Data sent to client
+2024-08-29T09:46:30.926Z: GET /data request received
+2024-08-29T09:46:30.938Z: data.json file read successfully
+2024-08-29T09:46:30.956Z: Data sent to client
+2024-08-29T09:46:31.234Z: GET /data request received
+2024-08-29T09:46:31.237Z: data.json file read successfully
+2024-08-29T09:46:31.247Z: Data sent to client
+2024-08-29T09:46:48.787Z: GET /data request received
+2024-08-29T09:46:48.794Z: data.json file read successfully
+2024-08-29T09:46:48.802Z: Data sent to client
+2024-08-29T09:46:51.760Z: GET /data request received
+2024-08-29T09:46:51.763Z: data.json file read successfully
+2024-08-29T09:46:51.768Z: Data sent to client
+2024-08-29T09:46:59.175Z: GET /data request received
+2024-08-29T09:46:59.178Z: data.json file read successfully
+2024-08-29T09:46:59.187Z: Data sent to client
+2024-08-29T09:47:03.918Z: GET /data request received
+2024-08-29T09:47:03.922Z: data.json file read successfully
+2024-08-29T09:47:03.928Z: Data sent to client
+2024-08-29T09:47:05.678Z: GET /data request received
+2024-08-29T09:47:05.682Z: data.json file read successfully
+2024-08-29T09:47:05.692Z: Data sent to client
+2024-08-29T09:47:43.620Z: Server started and listening on port 3000
+2024-08-29T09:47:43.788Z: GET /data request received
+2024-08-29T09:47:43.803Z: data.json file read successfully
+2024-08-29T09:47:43.816Z: Data sent to client
+2024-08-29T09:47:44.063Z: GET /data request received
+2024-08-29T09:47:44.073Z: data.json file read successfully
+2024-08-29T09:47:44.083Z: Data sent to client
+2024-08-29T09:48:02.549Z: POST /submit request received
+2024-08-29T09:48:02.554Z: New movie object created: undefined
+2024-08-29T09:48:02.556Z: Error processing request: Cannot read properties of undefined (reading 'split')
+2024-08-29T09:48:02.712Z: GET /data request received
+2024-08-29T09:48:02.725Z: data.json file read successfully
+2024-08-29T09:48:02.739Z: Data sent to client
+2024-08-29T09:48:03.383Z: GET /data request received
+2024-08-29T09:48:03.390Z: data.json file read successfully
+2024-08-29T09:48:03.401Z: Data sent to client
+2024-08-29T09:49:14.698Z: GET /data request received
+2024-08-29T09:49:14.745Z: data.json file read successfully
+2024-08-29T09:49:14.790Z: Data sent to client
+2024-08-29T09:49:15.266Z: GET /data request received
+2024-08-29T09:49:15.272Z: data.json file read successfully
+2024-08-29T09:49:15.291Z: Data sent to client
+2024-08-29T09:49:36.227Z: Server started and listening on port 3000
+2024-08-29T09:49:36.409Z: GET /data request received
+2024-08-29T09:49:36.437Z: data.json file read successfully
+2024-08-29T09:49:36.458Z: Data sent to client
+2024-08-29T09:49:36.815Z: GET /data request received
+2024-08-29T09:49:36.826Z: data.json file read successfully
+2024-08-29T09:49:36.838Z: Data sent to client
+2024-08-29T09:50:20.756Z: POST /submit request received
+2024-08-29T09:50:20.763Z: Received data: {}
+2024-08-29T09:50:20.764Z: New movie object created: {"title":"Untitled Movie","year":"2024","genres":["Unknown"],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[],"imdbRating":0,"posterurl":""}
+2024-08-29T09:50:20.767Z: Existing data read from data.json
+2024-08-29T09:50:20.769Z: New movie added to the movies array
+2024-08-29T09:50:20.774Z: Updated data written to data.json
+2024-08-29T09:50:20.803Z: Response sent to client
+2024-08-29T09:50:21.670Z: GET /data request received
+2024-08-29T09:50:21.673Z: data.json file read successfully
+2024-08-29T09:50:21.687Z: Data sent to client
+2024-08-29T09:51:19.781Z: POST /submit request received
+2024-08-29T09:51:19.787Z: Received data: {"title":"seenu","year":"","genres":[""],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":"0","originalTitle":"","storyline":"","actors":[""],"imdbRating":"0","posterurl":""}
+2024-08-29T09:51:19.788Z: New movie object created: {"title":"seenu","year":"2024","genres":[""],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[""],"imdbRating":0,"posterurl":""}
+2024-08-29T09:51:19.791Z: Existing data read from data.json
+2024-08-29T09:51:19.794Z: New movie added to the movies array
+2024-08-29T09:51:19.799Z: Updated data written to data.json
+2024-08-29T09:51:19.805Z: Response sent to client
+2024-08-29T09:51:27.268Z: GET /data request received
+2024-08-29T09:51:27.282Z: data.json file read successfully
+2024-08-29T09:51:27.300Z: Data sent to client
+2024-08-29T09:51:27.824Z: GET /data request received
+2024-08-29T09:51:27.829Z: data.json file read successfully
+2024-08-29T09:51:27.839Z: Data sent to client
+2024-08-29T09:53:48.292Z: GET /data request received
+2024-08-29T09:53:48.307Z: data.json file read successfully
+2024-08-29T09:53:48.322Z: Data sent to client
+2024-08-29T09:53:48.563Z: GET /data request received
+2024-08-29T09:53:48.569Z: data.json file read successfully
+2024-08-29T09:53:48.579Z: Data sent to client
+2024-08-29T09:54:30.406Z: GET /data request received
+2024-08-29T09:54:30.414Z: data.json file read successfully
+2024-08-29T09:54:30.430Z: Data sent to client
+2024-08-29T09:55:39.984Z: GET /data request received
+2024-08-29T09:55:39.996Z: data.json file read successfully
+2024-08-29T09:55:40.012Z: Error reading file: Unexpected token ']', ...""
+  },
+  
+]" is not valid JSON
+2024-08-29T09:55:42.648Z: GET /data request received
+2024-08-29T09:55:42.652Z: data.json file read successfully
+2024-08-29T09:55:42.659Z: Data sent to client
+2024-08-29T09:55:53.497Z: Server started and listening on port 3000
+2024-08-29T09:55:53.665Z: GET /data request received
+2024-08-29T09:55:53.671Z: data.json file read successfully
+2024-08-29T09:55:53.680Z: Data sent to client
+2024-08-29T09:55:53.804Z: GET /data request received
+2024-08-29T09:55:53.809Z: data.json file read successfully
+2024-08-29T09:55:53.814Z: Data sent to client
+2024-08-29T09:55:53.939Z: GET /data request received
+2024-08-29T09:55:53.943Z: data.json file read successfully
+2024-08-29T09:55:53.969Z: Data sent to client
+2024-08-29T09:56:12.972Z: POST /submit request received
+2024-08-29T09:56:12.973Z: Received data: {}
+2024-08-29T09:56:12.974Z: New movie object created: {"title":"Untitled Movie","year":"2024","genres":["Unknown"],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[],"imdbRating":0,"posterurl":""}
+2024-08-29T09:56:12.981Z: Existing data read from data.json
+2024-08-29T09:56:12.983Z: New movie added to the movies array
+2024-08-29T09:56:12.987Z: Updated data written to data.json
+2024-08-29T09:56:12.989Z: Response sent to client
+2024-08-29T09:56:13.161Z: GET /data request received
+2024-08-29T09:56:13.192Z: data.json file read successfully
+2024-08-29T09:56:13.223Z: Data sent to client
+2024-08-29T09:56:13.472Z: GET /data request received
+2024-08-29T09:56:13.479Z: data.json file read successfully
+2024-08-29T09:56:13.504Z: Data sent to client
+2024-08-29T09:56:57.196Z: POST /submit request received
+2024-08-29T09:56:57.197Z: Received data: {"title":"seenu","year":"","genres":[""],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":"0","originalTitle":"","storyline":"","actors":[""],"imdbRating":"0","posterurl":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"}
+2024-08-29T09:56:57.198Z: New movie object created: {"title":"seenu","year":"2024","genres":[""],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[""],"imdbRating":0,"posterurl":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"}
+2024-08-29T09:56:57.202Z: Existing data read from data.json
+2024-08-29T09:56:57.204Z: New movie added to the movies array
+2024-08-29T09:56:57.208Z: Updated data written to data.json
+2024-08-29T09:56:57.214Z: Response sent to client
+2024-08-29T09:57:10.485Z: GET /data request received
+2024-08-29T09:57:10.495Z: data.json file read successfully
+2024-08-29T09:57:10.518Z: Data sent to client
+2024-08-29T09:57:10.717Z: GET /data request received
+2024-08-29T09:57:10.731Z: data.json file read successfully
+2024-08-29T09:57:10.740Z: Data sent to client
+2024-08-29T09:58:21.849Z: GET /data request received
+2024-08-29T09:58:21.903Z: data.json file read successfully
+2024-08-29T09:58:21.966Z: Error reading file: Expected ',' or ']' after array element in JSON at position 219902 (line 7281 column 3)
+2024-08-29T09:58:22.379Z: GET /data request received
+2024-08-29T09:58:22.387Z: data.json file read successfully
+2024-08-29T09:58:22.392Z: Error reading file: Expected ',' or ']' after array element in JSON at position 219902 (line 7281 column 3)
+2024-08-29T09:58:22.569Z: GET /data request received
+2024-08-29T09:58:22.576Z: data.json file read successfully
+2024-08-29T09:58:22.579Z: Error reading file: Expected ',' or ']' after array element in JSON at position 219902 (line 7281 column 3)
+2024-08-29T09:58:23.295Z: GET /data request received
+2024-08-29T09:58:23.306Z: data.json file read successfully
+2024-08-29T09:58:23.316Z: Data sent to client
+2024-08-29T10:04:22.993Z: GET /data request received
+2024-08-29T10:04:23.023Z: data.json file read successfully
+2024-08-29T10:04:23.050Z: Data sent to client
+2024-08-29T10:04:23.196Z: GET /data request received
+2024-08-29T10:04:23.219Z: data.json file read successfully
+2024-08-29T10:04:23.233Z: Data sent to client
+2024-08-29T10:04:58.048Z: POST /submit request received
+2024-08-29T10:04:58.050Z: Received data: {}
+2024-08-29T10:04:58.051Z: New movie object created: {"title":"Untitled Movie","year":"2024","genres":["Unknown"],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[],"imdbRating":0,"posterurl":""}
+2024-08-29T10:04:58.055Z: Existing data read from data.json
+2024-08-29T10:04:58.058Z: New movie added to the movies array
+2024-08-29T10:04:58.081Z: Updated data written to data.json
+2024-08-29T10:04:58.101Z: Response sent to client
+2024-08-29T10:04:59.701Z: GET /data request received
+2024-08-29T10:04:59.708Z: data.json file read successfully
+2024-08-29T10:04:59.733Z: Data sent to client
+2024-08-29T10:09:29.831Z: GET /data request received
+2024-08-29T10:09:29.849Z: data.json file read successfully
+2024-08-29T10:09:29.863Z: Data sent to client
+2024-08-29T10:09:29.990Z: GET /data request received
+2024-08-29T10:09:29.993Z: data.json file read successfully
+2024-08-29T10:09:29.998Z: Data sent to client
+2024-08-29T10:09:53.893Z: Server started and listening on port 3000
+2024-08-29T10:09:54.445Z: GET /data request received
+2024-08-29T10:09:54.457Z: data.json file read successfully
+2024-08-29T10:09:54.466Z: Data sent to client
+2024-08-29T10:10:30.173Z: POST /submit request received
+2024-08-29T10:10:30.180Z: Request headers: {"user-agent":"PostmanRuntime/7.41.2","accept":"*/*","postman-token":"01ed2e68-0d44-4f79-8048-cd36f33111a1","host":"192.168.0.171:3000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"0"}
+2024-08-29T10:10:30.181Z: Raw request body: {}
+2024-08-29T10:10:30.182Z: Unsupported content type
+2024-08-29T10:10:31.170Z: GET /data request received
+2024-08-29T10:10:31.183Z: data.json file read successfully
+2024-08-29T10:10:31.198Z: Data sent to client
+2024-08-29T10:10:31.453Z: GET /data request received
+2024-08-29T10:10:31.463Z: data.json file read successfully
+2024-08-29T10:10:31.472Z: Data sent to client
+2024-08-29T10:10:31.615Z: GET /data request received
+2024-08-29T10:10:31.623Z: data.json file read successfully
+2024-08-29T10:10:31.668Z: Data sent to client
+2024-08-29T10:10:31.822Z: GET /data request received
+2024-08-29T10:10:31.833Z: data.json file read successfully
+2024-08-29T10:10:31.843Z: Data sent to client
+2024-08-29T10:10:31.979Z: GET /data request received
+2024-08-29T10:10:31.981Z: data.json file read successfully
+2024-08-29T10:10:31.988Z: Data sent to client
+2024-08-29T10:10:52.406Z: GET /data request received
+2024-08-29T10:10:52.430Z: data.json file read successfully
+2024-08-29T10:10:52.457Z: Data sent to client
+2024-08-29T10:10:52.604Z: GET /data request received
+2024-08-29T10:10:52.612Z: data.json file read successfully
+2024-08-29T10:10:52.619Z: Data sent to client
+2024-08-29T10:10:52.753Z: GET /data request received
+2024-08-29T10:10:52.759Z: data.json file read successfully
+2024-08-29T10:10:52.787Z: Data sent to client
+2024-08-29T10:10:52.899Z: GET /data request received
+2024-08-29T10:10:52.909Z: data.json file read successfully
+2024-08-29T10:10:52.921Z: Data sent to client
+2024-08-29T10:10:54.399Z: GET /data request received
+2024-08-29T10:10:54.408Z: data.json file read successfully
+2024-08-29T10:10:54.413Z: Data sent to client
+2024-08-29T10:10:57.113Z: GET /data request received
+2024-08-29T10:10:57.116Z: data.json file read successfully
+2024-08-29T10:10:57.121Z: Data sent to client
+2024-08-29T10:10:58.836Z: GET /data request received
+2024-08-29T10:10:58.844Z: data.json file read successfully
+2024-08-29T10:10:58.851Z: Data sent to client
+2024-08-29T10:11:28.146Z: POST /submit request received
+2024-08-29T10:11:28.149Z: Request headers: {"host":"localhost:3000","connection":"keep-alive","content-length":"161","sec-ch-ua":"\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\"","accept":"*/*","sec-ch-ua-platform":"\"Linux\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","content-type":"application/x-www-form-urlencoded; charset=UTF-8","origin":"http://127.0.0.1:5501","sec-fetch-site":"cross-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://127.0.0.1:5501/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+2024-08-29T10:11:28.150Z: Raw request body: {"title":"seenutemp","year":"","genres":[""],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":"0","originalTitle":"","storyline":"","actors":[""],"imdbRating":"0","posterurl":""}
+2024-08-29T10:11:28.151Z: New movie object created: {"title":"seenutemp","year":"2024","genres":[""],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[""],"imdbRating":0,"posterurl":""}
+2024-08-29T10:11:28.155Z: Existing data read from data.json
+2024-08-29T10:11:28.157Z: New movie added to the movies array
+2024-08-29T10:11:28.160Z: Updated data written to data.json
+2024-08-29T10:11:28.167Z: Response sent to client
+2024-08-29T10:11:32.201Z: GET /data request received
+2024-08-29T10:11:32.210Z: data.json file read successfully
+2024-08-29T10:11:32.220Z: Data sent to client
+2024-08-29T10:11:32.772Z: GET /data request received
+2024-08-29T10:11:32.780Z: data.json file read successfully
+2024-08-29T10:11:32.804Z: Data sent to client
+2024-08-29T10:12:13.874Z: GET /data request received
+2024-08-29T10:12:13.995Z: data.json file read successfully
+2024-08-29T10:12:14.130Z: Data sent to client
+2024-08-29T10:12:14.607Z: GET /data request received
+2024-08-29T10:12:14.618Z: data.json file read successfully
+2024-08-29T10:12:14.634Z: Data sent to client
+2024-08-29T10:12:14.865Z: GET /data request received
+2024-08-29T10:12:14.874Z: data.json file read successfully
+2024-08-29T10:12:14.914Z: Data sent to client
+2024-08-29T10:12:15.164Z: GET /data request received
+2024-08-29T10:12:15.184Z: data.json file read successfully
+2024-08-29T10:12:15.195Z: Data sent to client
+2024-08-29T10:48:01.205Z: GET /data request received
+2024-08-29T10:48:01.215Z: data.json file read successfully
+2024-08-29T10:48:01.232Z: Data sent to client
+2024-08-29T10:53:04.088Z: POST /submit request received
+2024-08-29T10:53:04.102Z: Request headers: {"host":"localhost:3000","connection":"keep-alive","content-length":"299","sec-ch-ua":"\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\"","accept":"*/*","sec-ch-ua-platform":"\"Linux\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","content-type":"application/x-www-form-urlencoded; charset=UTF-8","origin":"http://127.0.0.1:5501","sec-fetch-site":"cross-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://127.0.0.1:5501/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+2024-08-29T10:53:04.102Z: Raw request body: {"title":"seenuggshh","year":"","genres":[""],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":"0","originalTitle":"","storyline":"","actors":[""],"imdbRating":"0","posterurl":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"}
+2024-08-29T10:53:04.103Z: New movie object created: {"title":"seenuggshh","year":"2024","genres":[""],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[""],"imdbRating":0,"posterurl":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"}
+2024-08-29T10:53:04.131Z: Existing data read from data.json
+2024-08-29T10:53:04.133Z: New movie added to the movies array
+2024-08-29T10:53:04.146Z: Updated data written to data.json
+2024-08-29T10:53:04.171Z: Response sent to client
+2024-08-29T10:53:06.460Z: GET /data request received
+2024-08-29T10:53:06.495Z: data.json file read successfully
+2024-08-29T10:53:06.522Z: Data sent to client
+2024-08-29T10:53:22.389Z: GET /data request received
+2024-08-29T10:53:22.403Z: data.json file read successfully
+2024-08-29T10:53:22.424Z: Data sent to client
+2024-08-29T10:53:32.850Z: GET /data request received
+2024-08-29T10:53:32.878Z: data.json file read successfully
+2024-08-29T10:53:32.928Z: Data sent to client
+2024-08-29T10:53:33.266Z: GET /data request received
+2024-08-29T10:53:33.285Z: data.json file read successfully
+2024-08-29T10:53:33.323Z: Data sent to client
+2024-08-29T10:53:33.499Z: GET /data request received
+2024-08-29T10:53:33.511Z: data.json file read successfully
+2024-08-29T10:53:33.517Z: Data sent to client
+2024-08-29T10:53:33.753Z: GET /data request received
+2024-08-29T10:53:33.759Z: data.json file read successfully
+2024-08-29T10:53:33.763Z: Data sent to client
+2024-08-29T10:53:34.091Z: GET /data request received
+2024-08-29T10:53:34.100Z: data.json file read successfully
+2024-08-29T10:53:34.112Z: Data sent to client
+2024-08-29T10:53:34.312Z: GET /data request received
+2024-08-29T10:53:34.321Z: data.json file read successfully
+2024-08-29T10:53:34.336Z: Data sent to client
+2024-08-29T10:53:34.461Z: GET /data request received
+2024-08-29T10:53:34.463Z: data.json file read successfully
+2024-08-29T10:53:34.471Z: Data sent to client
+2024-08-29T11:36:58.099Z: GET /data request received
+2024-08-29T11:36:58.109Z: data.json file read successfully
+2024-08-29T11:36:58.141Z: Data sent to client
+2024-08-29T11:36:58.285Z: GET /data request received
+2024-08-29T11:36:58.290Z: data.json file read successfully
+2024-08-29T11:36:58.297Z: Data sent to client
+2024-08-30T04:55:40.470Z: Server started and listening on port 3000
+2024-08-30T04:55:40.671Z: GET /data request received
+2024-08-30T04:55:40.677Z: data.json file read successfully
+2024-08-30T04:55:40.689Z: Data sent to client
+2024-08-30T04:55:40.820Z: GET /data request received
+2024-08-30T04:55:40.830Z: data.json file read successfully
+2024-08-30T04:55:40.838Z: Data sent to client
+2024-08-30T04:55:46.801Z: GET /data request received
+2024-08-30T04:55:46.804Z: data.json file read successfully
+2024-08-30T04:55:46.809Z: Data sent to client
+2024-08-30T04:57:13.842Z: GET /data request received
+2024-08-30T04:57:13.845Z: data.json file read successfully
+2024-08-30T04:57:13.849Z: Data sent to client
+2024-08-30T04:57:13.973Z: GET /data request received
+2024-08-30T04:57:13.977Z: data.json file read successfully
+2024-08-30T04:57:13.983Z: Data sent to client
+2024-08-30T04:58:21.593Z: GET /data request received
+2024-08-30T04:58:21.595Z: data.json file read successfully
+2024-08-30T04:58:21.602Z: Data sent to client
+2024-08-30T04:58:21.760Z: GET /data request received
+2024-08-30T04:58:21.766Z: data.json file read successfully
+2024-08-30T04:58:21.773Z: Data sent to client
+2024-08-30T04:58:21.955Z: GET /data request received
+2024-08-30T04:58:21.959Z: data.json file read successfully
+2024-08-30T04:58:21.970Z: Data sent to client
+2024-08-30T05:01:53.093Z: GET /data request received
+2024-08-30T05:01:53.095Z: data.json file read successfully
+2024-08-30T05:01:53.098Z: Data sent to client
+2024-08-30T05:01:53.286Z: GET /data request received
+2024-08-30T05:01:53.291Z: data.json file read successfully
+2024-08-30T05:01:53.295Z: Data sent to client
+2024-08-30T05:02:09.086Z: POST /submit request received
+2024-08-30T05:02:09.089Z: New movie object created: [object Object]
+2024-08-30T05:02:09.089Z: Error processing request: Cannot read properties of undefined (reading 'split')
+2024-08-30T05:02:09.276Z: GET /data request received
+2024-08-30T05:02:09.279Z: data.json file read successfully
+2024-08-30T05:02:09.286Z: Data sent to client
+2024-08-30T05:02:44.665Z: POST /submit request received
+2024-08-30T05:02:44.666Z: New movie object created: [object Object]
+2024-08-30T05:02:44.666Z: Error processing request: Cannot read properties of undefined (reading 'split')
+2024-08-30T05:02:44.802Z: GET /data request received
+2024-08-30T05:02:44.805Z: data.json file read successfully
+2024-08-30T05:02:44.811Z: Data sent to client
+2024-08-30T05:21:19.321Z: POST /submit request received
+2024-08-30T05:21:19.323Z: New movie object created: [object Object]
+2024-08-30T05:21:19.324Z: New movie object created: {"title":"seenu","year":"2024","genres":[""],"ratings":[],"poster":"","contentRating":"","duration":"","releaseDate":"","averageRating":0,"originalTitle":"","storyline":"","actors":[""],"imdbRating":0,"posterurl":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"}
+2024-08-30T05:21:19.330Z: Existing data read from data.json
+2024-08-30T05:21:19.334Z: New movie added to the movies array
+2024-08-30T05:21:19.340Z: Updated data written to data.json
+2024-08-30T05:21:19.342Z: Response sent to client
+2024-08-30T05:21:19.363Z: GET /data request received
+2024-08-30T05:21:19.367Z: data.json file read successfully
+2024-08-30T05:21:19.371Z: Data sent to client
+2024-08-30T05:21:19.513Z: GET /data request received
+2024-08-30T05:21:19.515Z: data.json file read successfully
+2024-08-30T05:21:19.519Z: Data sent to client
+2024-08-30T05:21:37.090Z: GET /data request received
+2024-08-30T05:21:37.092Z: data.json file read successfully
+2024-08-30T05:21:37.096Z: Data sent to client
+2024-08-30T05:21:37.233Z: GET /data request received
+2024-08-30T05:21:37.234Z: data.json file read successfully
+2024-08-30T05:21:37.239Z: Data sent to client
+2024-08-30T05:21:37.395Z: GET /data request received
+2024-08-30T05:21:37.398Z: data.json file read successfully
+2024-08-30T05:21:37.406Z: Data sent to client
+2024-08-30T05:21:37.543Z: GET /data request received
+2024-08-30T05:21:37.547Z: data.json file read successfully
+2024-08-30T05:21:37.558Z: Data sent to client
+2024-08-30T05:21:37.679Z: GET /data request received
+2024-08-30T05:21:37.682Z: data.json file read successfully
+2024-08-30T05:21:37.687Z: Data sent to client
+2024-08-30T05:21:37.833Z: GET /data request received
+2024-08-30T05:21:37.836Z: data.json file read successfully
+2024-08-30T05:21:37.840Z: Data sent to client
+2024-08-30T05:21:37.988Z: GET /data request received
+2024-08-30T05:21:37.991Z: data.json file read successfully
+2024-08-30T05:21:38.007Z: Data sent to client
+2024-08-30T05:23:09.634Z: Server started and listening on port 3000
+2024-08-30T05:23:09.800Z: GET /data request received
+2024-08-30T05:23:09.810Z: data.json file read successfully
+2024-08-30T05:23:09.823Z: Data sent to client
+2024-08-30T05:23:09.948Z: GET /data request received
+2024-08-30T05:23:09.953Z: data.json file read successfully
+2024-08-30T05:23:09.958Z: Data sent to client
+2024-08-30T05:23:10.086Z: GET /data request received
+2024-08-30T05:23:10.092Z: data.json file read successfully
+2024-08-30T05:23:10.105Z: Data sent to client
+2024-08-30T05:41:13.166Z: GET /data request received
+2024-08-30T05:41:13.175Z: data.json file read successfully
+2024-08-30T05:41:13.184Z: Data sent to client
+2024-08-30T05:41:17.801Z: GET /data request received
+2024-08-30T05:41:17.807Z: data.json file read successfully
+2024-08-30T05:41:17.817Z: Data sent to client
+2024-08-30T05:41:18.016Z: GET /data request received
+2024-08-30T05:41:18.018Z: data.json file read successfully
+2024-08-30T05:41:18.025Z: Data sent to client
+2024-08-30T05:41:19.847Z: GET /data request received
+2024-08-30T05:41:19.853Z: data.json file read successfully
+2024-08-30T05:41:19.862Z: Data sent to client
+2024-08-30T05:41:35.140Z: POST /submit request received
+2024-08-30T05:41:35.142Z: New movie object created: [object Object]
+2024-08-30T05:41:35.142Z: Error processing request: Cannot read properties of undefined (reading 'split')
+2024-08-30T05:41:39.046Z: GET /data request received
+2024-08-30T05:41:39.051Z: data.json file read successfully
+2024-08-30T05:41:39.058Z: Data sent to client
+2024-08-30T05:41:48.564Z: POST /submit request received
+2024-08-30T05:41:48.564Z: New movie object created: [object Object]
+2024-08-30T05:41:48.565Z: Error processing request: Cannot read properties of undefined (reading 'split')
+2024-08-30T05:41:50.536Z: GET /data request received
+2024-08-30T05:41:50.540Z: data.json file read successfully
+2024-08-30T05:41:50.547Z: Data sent to client
+2024-08-30T05:41:50.686Z: GET /data request received
+2024-08-30T05:41:50.689Z: data.json file read successfully
+2024-08-30T05:41:50.697Z: Data sent to client
+2024-08-30T05:43:28.299Z: GET /data request received
+2024-08-30T05:43:28.305Z: data.json file read successfully
+2024-08-30T05:43:28.315Z: Data sent to client
+2024-08-30T05:43:30.637Z: GET /data request received
+2024-08-30T05:43:30.641Z: data.json file read successfully
+2024-08-30T05:43:30.645Z: Data sent to client
+2024-08-30T05:43:30.815Z: GET /data request received
+2024-08-30T05:43:30.820Z: data.json file read successfully
+2024-08-30T05:43:30.824Z: Data sent to client
