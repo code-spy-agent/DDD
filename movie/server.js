@@ -6,6 +6,7 @@ const port = 3000;
 const cors = require('cors');
 
 app.use(cors());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Logger function
@@ -37,36 +38,47 @@ app.get('/data', async (req, res) => {
 // Add new POST route to receive and store movie data
 app.post('/submit', async (req, res) => {
     await log('POST /submit request received');
-    await log(`New movie object created: ${req.body}`);
+    await log(`Received data: ${JSON.stringify(req.body)}`);
+
     try {
-        const newMovie = {
-            title: req.body.title || 'Untitled Movie',
-            year: req.body.year || new Date().getFullYear().toString(),
-            genres: Array.isArray(req.body.genres) ? req.body.genres : req.body.genres.split(',').map(genre => genre.trim()),
-            ratings: [],
-            poster: req.body.poster || '',
-            contentRating: req.body.contentRating || '',
-            duration: req.body.duration || '',
-            releaseDate: req.body.releaseDate || '',
-            averageRating: 0,
-            originalTitle: req.body.originalTitle || '',
-            storyline: req.body.storyline || '',
-            actors: Array.isArray(req.body.actors) ? req.body.actors : req.body.actors.split(',').map(actor => actor.trim()),
-            imdbRating: 0,
-            posterurl: req.body.posterurl || ''
+        let newMovie = req.body;
+
+        // Process genres and actors
+        newMovie.genres = processArrayField(newMovie.genres);
+        newMovie.actors = processArrayField(newMovie.actors);
+
+        // Ensure all fields are present, use entered values or defaults
+        newMovie = {
+            title: newMovie.title || 'Untitled Movie',
+            year: newMovie.year || new Date().getFullYear().toString(),
+            genres: newMovie.genres,
+            ratings: newMovie.ratings || [],
+            poster: newMovie.poster || '',
+            contentRating: newMovie.contentRating || '',
+            duration: newMovie.duration || '',
+            releaseDate: newMovie.releaseDate || '',
+            averageRating: newMovie.averageRating || 0,
+            originalTitle: newMovie.originalTitle || '',
+            storyline: newMovie.storyline || '',
+            actors: newMovie.actors,
+            imdbRating: newMovie.imdbRating || 0,
+            posterurl: newMovie.posterurl || ''
         };
-        await log(`New movie object created: ${JSON.stringify(newMovie)}`);
 
+        await log(`Processed movie data: ${JSON.stringify(newMovie)}`);
+
+        // Read the existing data
         const data = await fs.readFile('data.json', 'utf8');
-        await log('Existing data read from data.json');
         let movies = JSON.parse(data);
-        movies.push(newMovie);
-        await log('New movie added to the movies array');
 
+        // Add the new movie
+        movies.push(newMovie);
+
+        // Write the updated data back to the file
         await fs.writeFile('data.json', JSON.stringify(movies, null, 2));
-        await log('Updated data written to data.json');
+        await log('New movie added to data.json');
+
         res.status(201).json(newMovie);
-        await log('Response sent to client');
     } catch (err) {
         await log(`Error processing request: ${err.message}`);
         console.error('Error processing request:', err);
@@ -74,9 +86,19 @@ app.post('/submit', async (req, res) => {
     }
 });
 
-// Start the server
-app.listen(port, () => {
-    log(`Server started and listening on port ${port}`);
-    console.log(`Server running at http://localhost:${port}`);
+function processArrayField(field) {
+    if (typeof field === 'string') {
+        return field.split(',').map(item => item.trim());
+    } else if (Array.isArray(field)) {
+        return field;
+    }
+    return [];
+}
+
+// Listen on all network interfaces
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server running at http://0.0.0.0:${port}`);
+    console.log(`Open your browser and navigate to http://localhost:${port} to view the application locally`);
+    console.log(`To access from another device on your network, use your computer's IP address`);
 });
 

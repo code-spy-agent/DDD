@@ -629,6 +629,61 @@
         $("#add-movie-form").toggle();
     });
 
+
+
+//     $("#submit-movie").on("click", function() {
+//     const newMovie = {
+//         title: $("#movie-title").val(),
+//         year: $("#movie-year").val(),
+//         genres: $("#movie-genres").val().split(",").map(genre => genre.trim()),
+//         ratings: [],
+//         poster: "",
+//         contentRating: "",
+//         duration: "",
+//         releaseDate: "",
+//         averageRating: 0,
+//         originalTitle: "",
+//         storyline: $("#movie-storyline").val(),
+//         actors: $("#movie-actors").val().split(",").map(actor => actor.trim()),
+//         imdbRating: 0,
+//         posterurl: $("#movie-posterurl").val()
+//     };
+
+//     $.ajax({
+//         url: "http://localhost:3000/submit",
+//         type: "POST",
+//         contentType: "application/json",
+//         data: JSON.stringify(newMovie),
+//         success: function(response) {
+//             console.log("Movie added successfully:", response);
+//             $("#add-movie-form").hide();
+//             $("#add-movie-form input").val("");
+            
+//             // Refresh the movie list
+//             $.ajax({
+//                 url: "http://localhost:3000/data",
+//                 type: "GET",
+//                 success: function(data) {
+//                     citiesData = data;
+//                     currentData = [...citiesData];
+//                     renderCards(currentData, true);
+//                     setupBannerSlider();
+//                 },
+//                 error: function(xhr, status, error) {
+//                     console.error("Error fetching updated data:", error);
+//                 }
+//             });
+//         },
+//         error: function(xhr, status, error) {
+//             console.error("Error adding movie:", error);
+//             alert("Error adding movie. Please try again.");
+//         }
+//     });
+// });
+
+
+
+
     $("#submit-movie").on("click", function() {
         const newMovie = {
             title: $("#movie-title").val(),

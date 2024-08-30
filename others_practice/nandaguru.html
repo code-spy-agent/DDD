@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+//         $.ajax({
+//     url: 'https://api.jsonbin.io/v3/b/66d16202acd3cb34a87ba044',
+//     type: 'GET',
+//     headers: {
+//         'X-Master-Key': '$2a$10$qg0ZBad.ihMVPEAmoi3G0upypZPrNGtzc1rvDbthnIpf5DAHGuSYe' // Optional if the bin is private
+//     },
+//     success: function(data) {
+//         console.log(data);
+//     },
+//     error: function(error) {
+//         console.error('Error:', error);
+//     }
+// });
+
+// First, retrieve the current data
+$.ajax({
+    url: 'https://api.jsonbin.io/v3/b/66d16202acd3cb34a87ba044',
+    type: 'GET',
+    headers: {
+        'X-Master-Key': '$2a$10$qg0ZBad.ihMVPEAmoi3G0upypZPrNGtzc1rvDbthnIpf5DAHGuSYe'
+    },
+    success: function(existingData) {
+        // Add the new object to the existing data
+        existingData.record.push({
+            "name": "New User",
+            "age": 28,
+            "email": "newuser@example.com"
+        });
+ 
+        // Now update the bin with the new data
+        $.ajax({
+            url: 'https://api.jsonbin.io/v3/b/66d16202acd3cb34a87ba044',
+            type: 'PUT',
+            contentType: 'application/json',
+            headers: {
+                'X-Master-Key': '$2a$10$qg0ZBad.ihMVPEAmoi3G0upypZPrNGtzc1rvDbthnIpf5DAHGuSYe'
+            },
+            data: JSON.stringify(existingData),
+            success: function(data) {
+                console.log('Bin updated with new data:', data);
+            },
+            error: function(error) {
+                console.error('Error:', error);
+            }
+        });
+    },
+    error: function(error) {
+        console.error('Error:', error);
+    }
+});
+    </script>
+</body>
+</html>
+
+<!-- $.get("http://localhost:3000/data", function(data, status){
+    citiesData = data;
+    currentData = [...citiesData];
+    renderCards(currentData, true);
+    setupBannerSlider();
+}); -->

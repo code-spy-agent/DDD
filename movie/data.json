@@ -7279,25 +7279,27 @@
     "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"
   },
   {
-    "title": "Untitled Movie",
+    "title": "ajaxmovie",
     "year": "2024",
     "genres": [
-      "Unknown"
+      ""
     ],
     "ratings": [],
     "poster": "",
     "contentRating": "",
     "duration": "",
     "releaseDate": "",
-    "averageRating": 0,
+    "averageRating": "0",
     "originalTitle": "",
     "storyline": "",
-    "actors": [],
-    "imdbRating": 0,
+    "actors": [
+      ""
+    ],
+    "imdbRating": "0",
     "posterurl": ""
   },
   {
-    "title": "seenutemp",
+    "title": "ajaxmovie sep",
     "year": "2024",
     "genres": [
       ""
@@ -7307,17 +7309,17 @@
     "contentRating": "",
     "duration": "",
     "releaseDate": "",
-    "averageRating": 0,
+    "averageRating": "0",
     "originalTitle": "",
     "storyline": "",
     "actors": [
       ""
     ],
-    "imdbRating": 0,
-    "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"
+    "imdbRating": "0",
+    "posterurl": ""
   },
   {
-    "title": "seenuggshh",
+    "title": "ajaxmovie",
     "year": "2024",
     "genres": [
       ""
@@ -7327,33 +7329,13 @@
     "contentRating": "",
     "duration": "",
     "releaseDate": "",
-    "averageRating": 0,
+    "averageRating": "0",
     "originalTitle": "",
     "storyline": "",
     "actors": [
       ""
     ],
-    "imdbRating": 0,
-    "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"
-  },
-  {
-    "title": "seenu",
-    "year": "2024",
-    "genres": [
-      ""
-    ],
-    "ratings": [],
-    "poster": "",
-    "contentRating": "",
-    "duration": "",
-    "releaseDate": "",
-    "averageRating": 0,
-    "originalTitle": "",
-    "storyline": "",
-    "actors": [
-      ""
-    ],
-    "imdbRating": 0,
-    "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzODIyMTk4MV5BMl5BanBnXkFtZTcwMDM5NTk5Mw@@._V1_SY250_SX173_AL_.jpg"
+    "imdbRating": "0",
+    "posterurl": ""
   }
 ]
