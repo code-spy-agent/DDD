@@ -16,8 +16,7 @@ const Home = () => {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': '189efb89e3msh2557065f9e12512p1a8133jsn4509c94dfd3c',
-        'x-rapidapi-host': 'instagram-scraper-api2.p.rapidapi.com'
+       
       }
     };
 
