@@ -15,7 +15,8 @@ const Profile = () => {
     const options = {
       method: 'GET',
       headers: {
-       
+        'x-rapidapi-key': '',
+		    'x-rapidapi-host': ''
       }
     };
 
